@@ -5,7 +5,7 @@ import LandingFooter from '@/components/ui/shared-footer'
 function page() {
   return (
     <>
-      page
+      سلام
     </>
   )
 }

@@ -1,7 +1,35 @@
-@import "tailwindcss";    
+@import "tailwindcss";
 
+@font-face {
+  font-family: 'BYekan';
+  src: url('/fonts/BYekan.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SYEKAN';
+  src: url('/fonts/SYEKAN.TTF') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --font-base: 'BYekan', 'SYEKAN';
+
+  --color-black: #1e1e1e;
+  --color-yellow: #d5b86e;  
+  --color-white: #ffffff;   
+}
 
 body {
-  background: #1e1e1e;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-base);
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: 0;
+  margin: 0;  
+  box-sizing: border-box;
 }
+  
