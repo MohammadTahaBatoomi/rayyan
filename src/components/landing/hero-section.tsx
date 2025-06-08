@@ -14,7 +14,7 @@ export default function Home() {
       <img
         src="/images/landing/poster69.webp"
         alt="Full screen background mobile"
-        className="absolute inset-0 w-full h-[9 0vh] object-cover block lg:hidden"
+        className="absolute inset-0 w-full h-[90vh] object-cover block lg:hidden"
       />
 
       {/* لایه بور + تیرگی */}

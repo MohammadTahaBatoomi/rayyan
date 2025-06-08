@@ -20,7 +20,7 @@ const menuVariants = {
 const navItems = [
   { label: "صفحه اصلی", href: "/" },
   { label: "درباره ما", href: "/about-us" },
-  { label: "همکاری با ما", href: "/contact" },
+  { label: "همکاری با ما", href: "/collabration" },
 ];
 
 export default function Header() {
