@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+
 import Header from '@/components/ui/shared-header'
-import LandingFooter from '@/components/ui/shared-footer'
+import Herosection from '@/components/landing/hero-section'
+import Pastshows from '@/components/landing/past-shows'
+import Footer from '@/components/ui/shared-footer'
 
 function page() {
   return (
-    <>
-      سلام
-    </>
+    <Fragment>
+      <Header />
+        <Herosection /> 
+        <Pastshows />
+      <Footer />
+    </Fragment>
   )
 }
 
