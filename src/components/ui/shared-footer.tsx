@@ -3,9 +3,10 @@ import React from "react";
 
 import { FaInstagram } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { FaCircleCheck } from "react-icons/fa6";
+import { FaCube } from "react-icons/fa";
 
-export default function LandingFooter() {
+export default function Footer() {
   return (
     <footer className="px-4 mt-15">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between md:gap-8 gap-4 mt-10">
@@ -19,11 +20,17 @@ export default function LandingFooter() {
             تجربه کاربری و پشتیبانی دائمی.
           </p>
           <div className="flex gap-2 justify-center md:justify-start ">
+            <Link href="https://telegram.me/rayyaninfo" aria-label="تلگرام">
+              <FaTelegram className="text-xl cursor-pointer" />
+            </Link>
             <Link href="https://instagram.com/rayyaninfo_" aria-label="اینستاگرام" >
               <FaInstagram className="text-xl cursor-pointer" />
             </Link>
-            <Link href="https://telegram.me/rayyaninfo" aria-label="تلگرام" >
-              <FaTelegram className="text-xl cursor-pointer" />
+            <Link href="https://bale.ir/rayyaninfo" aria-label="بله">
+              <FaCircleCheck className="text-xl cursor-pointer" />
+            </Link>
+            <Link href="https://rubika.ir/rayyaninfo" aria-label="روبیکا">
+              <FaCube className="text-xl cursor-pointer" />
             </Link>
           </div>
         </div>

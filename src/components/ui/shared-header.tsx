@@ -45,7 +45,7 @@ export default function Header() {
     <>
       <header
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
-        bg-[#030301cc] backdrop-blur-2xl ${
+        bg-[#030301cc] backdrop-blur-2xl shadow-xl ${
           isVisible ? "translate-y-0" : "-translate-y-full"
         }`}
       >
@@ -62,8 +62,8 @@ export default function Header() {
               <Link href="/">
                 <img
                   src="/images/landing/white-logo.f488a9170613a1bdfa4e.webp"
-                  width={30}
-                  height={30}
+                  width={34}
+                  height={34}
                   alt="لوگوی موسسه رایان"
                 />
               </Link>
@@ -88,11 +88,11 @@ export default function Header() {
             </nav>
           </div>
 
-          <div className="flex gap-2 items-center text-xl">
+          <div className="flex gap-6 items-center text-xl">
             <img
               src="/images/landing/Screenshot from 2025-06-08 18-19-44-Photoroom.png"
-              width={53}
-              height={53}
+              width={22}
+              height={22}
               alt=""
               className="cursor-pointer"
             />
