@@ -44,7 +44,7 @@ export default function SocialLinks() {
   return (
     <div className="bg-[#141414] min-h-[80vh] flex flex-col items-center justify-center">
       <div className="max-w-4xl text-right space-y-4 mt-17 mb-6 md:mb-16 p-10 md:p-0">
-        <p className="text-[16px] md:text-[18px] leading-[2.5rem]">
+        <p className="text-[16px] md:text-[18px] leading-loose text-white">
           موسسه فرهنگی هنری رَیّان -متشکل از جوانان علاقه مند به حوزه هنرهای
           نمایشی- در سال ۱۳۹۷ تاسیس و هسته اصلی آن از اعضای
           <br />
@@ -52,7 +52,8 @@ export default function SocialLinks() {
           <br />
           رسالت این موسسه تبیین و تبلیغ معارف اهل بیت و اسلام انقلابی، در قالب
           تئاتر می‌باشد. همچنین رَیّان یک تشکل مستقل است و به
-          <br /> هیچ نهادی وابسته نیست.
+          <br />
+          هیچ نهادی وابسته نیست.
           <br />
           این موسسه بر آن است تا در طی سال نمایش‌هایی را تقدیم حضور دوستداران
           هنر و فرهنگ و مذهب ایران زمین نماید.
@@ -81,9 +82,7 @@ export default function SocialLinks() {
                 </div>
               </div>
             ) : (
-              <div
-                className="flex items-center justify-between px-8 py-8 rounded-xl border-2"
-              >
+              <div className="flex items-center justify-between px-8 py-8 rounded-xl border-2">
                 {item.icon}
                 <span>
                   {item.label}:<span className="mx-2">{item.username}</span>
