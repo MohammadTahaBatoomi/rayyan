@@ -1,9 +1,66 @@
-import React from 'react'
+"use client";
+import React from "react";
+import { motion, AnimatePresence } from "framer-motion";
 
-function personalInfo() {
+export default function Landinglogin({ onClose }: { onClose: () => void }) {
   return (
-    <div>personalInfo</div>
-  )
+    <AnimatePresence>
+      <motion.div
+        className="fixed inset-0 z-50 backdrop-blur-sm flex justify-center items-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
+        <motion.div
+          className="bg-black/70 backdrop-blur-sm rounded-xl shadow-xl p-8 w-full max-w-md relative"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          exit={{ scale: 0.8, opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          {/* فرم لاگین */}
+          <button
+            onClick={onClose}
+            className="absolute top-8 right-6 text-xl font-bold cursor-pointer"
+          >
+            ✕
+          </button>
+          <h2 className="text-center text-2xl font-bold mb-6 text-white">
+            رزرو بلیت
+          </h2>
+          <input
+            type="text"
+            placeholder="نام و نام خانوادگی"
+            className="w-full mb-6 bg-transparent border border-[#4b4b4b] rounded-lg hover:border-white px-4 py-4 text-right text-white placeholder-[#9da4ab] focus:outline-none focus:border-[var(--color-yellow)] transition-all duration-300"
+          />
+          <select
+            defaultValue=""
+            className="w-full mb-6 bg-transparent border border-[#4b4b4b] appearance-none rounded-lg hover:border-white px-4 py-4 text-right text-[#9da4ab] placeholder-[#9da4ab] focus:outline-none focus:border-[var(--color-yellow)] transition-all duration-300"
+          >
+            <option value="" disabled hidden>
+              رزرو بلیت (روز و ساعت پخش)
+            </option>
+            <option value="۱">۱</option>
+            <option value="۲">۲</option>
+            <option value="۳">۳</option>
+            <option value="۴">۴</option>
+            <option value="۵">۵</option>
+            <option value="۶">۶</option>
+            <option value="۷">۷</option>
+            <option value="۸">۸</option>
+            <option value="۹">۹</option>
+            <option value="۱۰">۱۰</option>
+            <option value="۱۱">۱۱</option>
+            <option value="۱۲">۱۲</option>
+            <option value="۱۳">۱۳</option>
+            <option value="۱۴">۱۴</option>
+            <option value="۱۵">۱۵</option>
+          </select>
+          <button className="w-full bg-[var(--color-yellow)] hover:bg-[#a18c55] text-black font-bold py-4 rounded-md transition-colors duration-200">
+             تاییید
+          </button>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  );
 }
-
-export default personalInfo
