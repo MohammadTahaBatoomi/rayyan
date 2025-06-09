@@ -96,7 +96,9 @@ export default function Header() {
               alt=""
               className="cursor-pointer"
             />
-            <FaRegUserCircle className="cursor-pointer" />
+            <Link href="/login">
+              <FaRegUserCircle className="cursor-pointer" />
+            </Link>
           </div>
         </div>
       </header>
