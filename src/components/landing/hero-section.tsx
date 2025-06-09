@@ -1,6 +1,10 @@
 import Link from "next/link";
+import Landinglogin from "../login/landing-login-phone";
+import { useState } from "react";
 
 export default function Home() {
+  const [showLogin, setShowLogin] = useState(false);
+
   return (
     <div className="relative h-screen overflow-hidden">
       {/* بک‌گراند دسکتاپ */}
@@ -24,7 +28,10 @@ export default function Home() {
 
       {/* دکمه‌ها در پایین سمت چپ */}
       <div className="absolute bottom-45 md:bottom-15 right-5 md:right-70 z-10 flex flex-col items-start gap-3">
-        <button className="md:px-24 px-12  py-3 md:py-4 bg-[var(--color-yellow)] text-md text-black font-900 rounded-lg shadow cursor-pointer transition-all duration-500 hover:bg-[#a18c55]">
+        <button
+          onClick={() => setShowLogin(true)}
+          className="md:px-24 px-12 py-3 md:py-4 bg-[var(--color-yellow)] text-md text-black font-900 rounded-lg shadow cursor-pointer transition-all duration-500 hover:bg-[#a18c55]"
+        >
           رزرو رایگان بلیت
         </button>
         <Link
@@ -34,7 +41,7 @@ export default function Home() {
           اطلاعات بیشتر نمایش
         </Link>
       </div>
-      <div className="flex"></div>
+      {showLogin && <Landinglogin onClose={() => setShowLogin(false)} />}
     </div>
   );
 }
