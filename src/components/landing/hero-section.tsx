@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Landinglogin from "../login/landing-login-phone";
+import Landinglogin from "../login/personalInfo";
 import { useState } from "react";
 
 export default function Home() {
