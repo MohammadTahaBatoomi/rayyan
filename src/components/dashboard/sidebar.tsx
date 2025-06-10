@@ -7,6 +7,8 @@ import { IoIosLogOut } from "react-icons/io";
 import { BsTicketPerforated } from "react-icons/bs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Landinglogin from "../alert/loguot";
+
 
 const desktopVariants = {
   hidden: { x: 300, opacity: 0 },
@@ -22,6 +24,7 @@ const mobileVariants = {
 
 function Sidebar() {
   const pathname = usePathname();
+  const [showLogin, setShowLogin] = useState(false);
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -88,7 +91,7 @@ function Sidebar() {
                   صفحه اصلی
                 </li>
               </Link>
-              <li className="flex items-center justify-start gap-6 text-[18px] font-bold mb-2 cursor-pointer p-3 rounded-lg">
+              <li className="flex items-center justify-start gap-6 text-[18px] font-bold mb-2 cursor-pointer p-3 rounded-lg" onClick={() => setShowLogin(true)}>
                 <IoIosLogOut className="text-[26px]" />
                 خروج
               </li>
@@ -163,9 +166,7 @@ function Sidebar() {
               </Link>
               <button
                 className="flex flex-col items-center justify-center text-[#757575] text-[14px]"
-                onClick={() => {
-                  alert("خروج انجام شد");
-                }}
+                onClick={() => setShowLogin(true)}
               >
                 <IoIosLogOut className="text-2xl mb-1" />
               </button>
@@ -173,6 +174,7 @@ function Sidebar() {
           </>
         )}
       </AnimatePresence>
+      {showLogin && <Landinglogin onClose={() => setShowLogin(false)} />}
     </>
   );
 }
