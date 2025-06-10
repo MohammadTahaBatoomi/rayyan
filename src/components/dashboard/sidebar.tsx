@@ -9,9 +9,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const desktopVariants = {
-  hidden: { x: -300, opacity: 0 },
+  hidden: { x: 300, opacity: 0 },
   visible: { x: 0, opacity: 1, transition: { duration: 0.5 } },
-  exit: { x: -300, opacity: 0, transition: { duration: 0.3 } },
+  exit: { x: 300, opacity: 0, transition: { duration: 0.3 } },
 };
 
 const mobileVariants = {

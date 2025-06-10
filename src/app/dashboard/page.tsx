@@ -16,7 +16,7 @@ const Page = () => {
   }, [router]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-[#151515] text-white">
+    <div className="fixed inset-0 flex flex-col items-center justify-center bg-[#151515] text-white overflow-hidden">
       <img
         src="/images/landing/loading.ac091c47a714fb287b8c.png"
         alt="Loading..."

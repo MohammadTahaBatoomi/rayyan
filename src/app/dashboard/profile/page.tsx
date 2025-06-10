@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Profile from '@/components/dashboard/profile'
 
 function page() {
   return (
-    <div>page</div>
+    <Fragment>
+      <Profile />
+    </Fragment>
   )
 }
 
