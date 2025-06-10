@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import Ticket from '@/components/dashboard/ticket'
 
 function page() {
   return (
-    <div>page</div>
+    <Fragment>
+      <Ticket />
+    </Fragment>
   )
 }
 

@@ -106,7 +106,7 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-[var(--color-yellow)]  font-bold text-[#252525] px-6 py-2 rounded cursor-pointer"
+              className="bg-[var(--color-yellow)] font-bold text-[#252525] px-6 py-2 rounded cursor-pointer"
             >
               ارسال
             </button>

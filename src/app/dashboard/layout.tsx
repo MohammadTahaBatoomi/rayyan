@@ -1,14 +1,21 @@
-// components/Layout.tsx or app/layout.tsx if using App Router
+'use client'
 
-type LayoutProps = {
-    children: React.ReactNode;
-  };
-  
-  export default function Layout({ children }: LayoutProps) {
-    return (
-      <main>
-        {children}
-      </main>
-    );
-  }
-  
+import Sidebar from '@/components/dashboard/sidebar'
+import { usePathname } from 'next/navigation'
+import { ReactNode } from 'react'
+
+const DashboardLayout = ({ children }: { children: ReactNode }) => {
+  const pathname = usePathname()
+
+  // فقط زمانی که مسیر دقیقا /dashboard نیست، سایدبار نشون داده بشه
+  const showSidebar = pathname !== '/dashboard'
+
+  return (
+    <div className="flex bg-[#151515] p-3.5 overflow-none">
+      {showSidebar && <Sidebar />}
+      <div className="flex-1">{children}</div>
+    </div>
+  )
+}
+
+export default DashboardLayout
