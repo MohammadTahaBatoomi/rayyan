@@ -21,8 +21,8 @@ async function Page({ params }: PageProps) {
         <Header />
         <Herosection {...data.heroSectionData} />
         {data.actors && data.actors.length > 0 && <ActorsList title="بازیگران" iconName="FaTheaterMasks" data={data.actors} />}
-        {data.directors && data.directors.length > 0 && <ActorsList title="کارگردانان" iconName="FaUserFriends" data={data.directors} />}
-        {data.writers && data.writers.length > 0 && <ActorsList title="نویسندگان" iconName="FaPencilAlt" data={data.writers} />}
+        {data.writers && data.writers.length > 0 && <ActorsList title="بازیگران فرم" iconName="FaTheaterMasks" data={data.writers} />}
+        {data.directors && data.directors.length > 0 && <ActorsList title="عوامل  " iconName="FaUserFriends" data={data.directors} />}
         <Footer />
       </Fragment>
     );
@@ -34,7 +34,6 @@ async function Page({ params }: PageProps) {
         <Herosection {...data.heroSectionData} />
         {data.actors && data.actors.length > 0 && <ActorsList title="بازیگران" iconName="FaTheaterMasks" data={data.actors} />}
         {data.directors && data.directors.length > 0 && <ActorsList title="عوامل" iconName="FaUserFriends" data={data.directors} />}
-        {data.writers && data.writers.length > 0 && <ActorsList title="نویسندگان" iconName="FaPencilAlt" data={data.writers} />}
         <Footer />
       </Fragment>
     );
@@ -46,7 +45,6 @@ async function Page({ params }: PageProps) {
         <Herosection {...data.heroSectionData} />
         {data.actors && data.actors.length > 0 && <ActorsList title="سخنرانان" iconName="FaTheaterMasks" data={data.actors} />}
         {data.directors && data.directors.length > 0 && <ActorsList title="کارگردانان" iconName="FaFilm" data={data.directors} />}
-        {data.writers && data.writers.length > 0 && <ActorsList title="گزارشگران" iconName="FaPencilAlt" data={data.writers} />}
         <Footer />
       </Fragment>
     );
@@ -58,7 +56,6 @@ async function Page({ params }: PageProps) {
         <Herosection {...data.heroSectionData} />
         {data.actors && data.actors.length > 0 && <ActorsList title="بازیگران" iconName="FaTheaterMasks" data={data.actors} />}
         {data.directors && data.directors.length > 0 && <ActorsList title="کارگردانان" iconName="FaFilm" data={data.directors} />}
-        {data.writers && data.writers.length > 0 && <ActorsList title="نویسندگان" iconName="FaPencilAlt" data={data.writers} />}
         <Footer />
       </Fragment>
     );
@@ -70,7 +67,6 @@ async function Page({ params }: PageProps) {
         <Herosection {...data.heroSectionData} />
         {data.actors && data.actors.length > 0 && <ActorsList title="بازیگران" iconName="FaTheaterMasks" data={data.actors} />}
         {data.directors && data.directors.length > 0 && <ActorsList title="کارگردانان" iconName="FaFilm" data={data.directors} />}
-        {data.writers && data.writers.length > 0 && <ActorsList title="دبیران" iconName="FaPencilAlt" data={data.writers} />}
         <Footer />
       </Fragment>
     );
@@ -82,7 +78,6 @@ async function Page({ params }: PageProps) {
         <Herosection {...data.heroSectionData} />
         {data.actors && data.actors.length > 0 && <ActorsList title="محققان" iconName="FaTheaterMasks" data={data.actors} />}
         {data.directors && data.directors.length > 0 && <ActorsList title="کارگردانان" iconName="FaFilm" data={data.directors} />}
-        {data.writers && data.writers.length > 0 && <ActorsList title="نویسندگان" iconName="FaPencilAlt" data={data.writers} />}
         <Footer />
       </Fragment>
     );

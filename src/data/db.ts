@@ -93,11 +93,17 @@ const archiveData: ArchiveData = {
       { name: 'علی محمدی فرید', img: '/images/archive/1404/farid.ec0ff77a2871c5308e5b.webp' },
     ],
     directors: [
-      { name: 'محمد امین دست کار', img: '/images/archive/1404/director1.webp' },
-      { name: 'دانیال محسنی', img: '/images/archive/1404/director2.webp' },
+      { name: 'محمد امین دست کار', img: '/images/archive/1404/amin.ce9f9b156010594d8b62 copy.webp' },
+      { name: 'دانیال محسنی', img: '/images/archive/1404/danial.dab82000434c119252c7.webp' },
+      { name: 'محمدسجاد بیگی', img: '/images/archive/1404/beigi.03f3313d7ddbcaf1ff67.webp ' },
     ],
     writers: [
-      { name: 'محمدسجاد بیگی', img: '/images/archive/1404/writer1.webp' },
+      { name: 'محمدجواد آقایی', img: '/images/archive/1404/sobhan.6d71aa892d1d66a98637.webp'},
+      { name: 'امیررضا علینقی', img: '/images/archive/1404/ali.8f40d5b2d73709fd2125.webp' },
+      { name: 'عرفان سلطانیان', img: '/images/archive/1404/soli.5d1ea1588fe685422c65.webp' },
+      { name: 'امیرحسین حیدری', img: '/images/archive/1404/heydari.b7a3c3475e9f1f3463a3.webp' },
+      { name: 'سید مهدی پورایوانی', img: '/images/archive/1404/poori.127302fb791ec733e4dc.webp' },
+      { name: 'ابوالفضل حبیبی', img: '/images/archive/1404/esmaiil.8ca10e969b04e5e93c3d.webp' },
     ],
   },
   '1403': {
@@ -132,9 +138,8 @@ const archiveData: ArchiveData = {
     directors: [
       { name: 'محمد امین دست کار', img: '/images/archive/1403/amin.ce9f9b156010594d8b62.webp' },
       { name: 'دانیال محسنی', img: '/images/archive/1403/danial.dab82000434c119252c7.webp' },
-      { name: 'محمدسجاد بیگی', img: '/images/archive/1403/beigi.03f3313d7ddbcaf1ff67.webp' },
+      { name: 'محمدسجاد بیگی', img: '/images/archive/1403/beigi.03f3313d7ddbcaf1ff67.webp ' },
     ],
-    writers: [], // مثلا برای 1403 نویسنده ای نباشد
   },
   '1402': {
     heroSectionData: {
@@ -156,9 +161,6 @@ const archiveData: ArchiveData = {
       { name: 'سخنران ۲', img: '/images/archive/default/person2.webp' },
     ],
     directors: [],
-    writers: [
-      { name: 'نویسنده گزارش', img: '/images/archive/default/person3.webp' },
-    ],
   },
   '1401': {
     heroSectionData: {
@@ -179,7 +181,6 @@ const archiveData: ArchiveData = {
       { name: 'بازیگر اصلی (۱۴۰۱)', img: '/images/archive/default/person4.webp' },
     ],
     directors: [],
-    writers: [],
   },
   '1400': {
     heroSectionData: {
@@ -198,9 +199,6 @@ const archiveData: ArchiveData = {
     },
     actors: [],
     directors: [],
-    writers: [
-      { name: 'سردبیر', img: '/images/archive/default/person5.webp' },
-    ],
   },
   '1397': {
     heroSectionData: {
@@ -221,7 +219,6 @@ const archiveData: ArchiveData = {
       { name: 'محقق اصلی', img: '/images/archive/default/person6.webp' },
     ],
     directors: [],
-    writers: [],
   },
 };
 
