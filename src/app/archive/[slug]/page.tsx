@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react'
+"use client"
+import React, { Fragment, useState, useEffect } from 'react'
 import Header from '@/components/ui/shared-header'
 import Herosection from '@/components/archive/hero-section'
 import ActorsList from '@/components/archive/actorsList'
@@ -8,11 +9,31 @@ import { notFound } from 'next/navigation'
 // import { FaTheaterMasks } from 'react-icons/fa' // No longer needed as iconName is a string
 
 interface PageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
-async function Page({ params }: PageProps) {
-  const { slug } = params;
+function Page({ params }: PageProps) {
+  const [loading, setLoading] = useState(true);
+  const resolvedParams = React.use(params);
+  const { slug } = resolvedParams;
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="flex flex-col items-center justify-center h-screen bg-[#151515]">
+        <img
+          src="/images/landing/loading.ac091c47a714fb287b8c.png"
+          alt="Loading..."
+          className="w-25 mb-7 rounded-4xl"
+        />
+        <p className="text-lg"> موسسه فرهنگی هنری رَیّان</p>
+      </div>
+    );
+  }
 
   if (slug === '1404') {
     const data = archiveData['1404'];
