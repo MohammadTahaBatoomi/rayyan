@@ -1,6 +1,6 @@
 'use client';
 import React, { FC } from 'react'
-import { FaTheaterMasks } from 'react-icons/fa';
+import { FaTheaterMasks, FaUserFriends, FaPencilAlt } from 'react-icons/fa';
 
 interface ActorItem {
   name: string;
@@ -16,6 +16,8 @@ interface ActorsListProps {
 // Map icon names to actual component references
 const IconMap: { [key: string]: FC<React.SVGProps<SVGSVGElement>> } = {
   FaTheaterMasks: FaTheaterMasks,
+  FaUserFriends: FaUserFriends,
+  FaPencilAlt: FaPencilAlt,
   // Add other icons here if needed, e.g., FaFilm: FaFilm,
 };
 
