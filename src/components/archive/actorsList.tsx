@@ -29,7 +29,7 @@ function ActorsList({ title, iconName, data }: ActorsListProps) {
         <span className="text-xl font-bold mr-2">{title}</span>
       </div>
       <div className="overflow-x-auto scrollbar-none" style={{ WebkitOverflowScrolling: 'touch' }}>
-        <div className="flex flex-row-reverse gap-x-20 min-w-max pb-4 inline-flex mx-auto">
+        <div className=" flex-row-reverse gap-x-5 md:gap-x-20 min-w-max pb-4 inline-flex mx-auto">
           {data.map((item: ActorItem, idx: number) => (
             <div key={idx} className="flex flex-col items-center min-w-[120px]">
               <div className="w-24 h-24 md:w-32 md:h-32 rounded-full overflow-hidden mb-2">
