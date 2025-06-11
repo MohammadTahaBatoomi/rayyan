@@ -27,7 +27,7 @@ function Profile() {
               </div>
               <button
                 type="submit"
-                className="w-full py-4 bg-[var(--color-yellow)] hover:bg-[#a18c55] text-black font-bold  rounded-md transition-colors duration-200 text-lg"
+                className="w-full py-3.5 bg-[var(--color-yellow)] hover:bg-[#a18c55] text-black font-bold  rounded-md transition-colors duration-200 text-lg"
               >
                 ویرایش اطلاعات
               </button>
