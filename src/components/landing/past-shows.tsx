@@ -73,6 +73,7 @@ function PastShows() {
                         <div>
                           <h3 className="text-md md:text-xl font-bold mb-4 md:mb-16 text-right">
                             {item.heroSectionData.title} -{" "}
+                            
                             {item.heroSectionData.year}
                           </h3>
                           <p className="text-gray-300 text-sm md:text-md font-bold leading-relaxed text-right mb-4">
