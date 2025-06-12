@@ -22,7 +22,7 @@ export default function Home() {
       />
 
       {/* لایه بور + تیرگی */}
-     <div className="absolute bottom-0 left-0 right-0 h-[100vh] bg-gradient-to-t from-black/70 via-black/70 to-black/0" />
+     <div className="absolute bottom-0 left-0 right-0 h-[90vh] bg-gradient-to-t from-black/70 via-black/70 to-black/0" />
 
 
 
