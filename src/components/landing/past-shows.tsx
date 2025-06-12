@@ -17,7 +17,7 @@ function PastShows() {
   return (
     <section>
     <div
-      className="w-full h-auto md:h-[50vh] mx-auto p-4 relative md:-mt-10 -mt-25"
+      className="w-full h-auto md:h-[50vh] mx-auto p-4 relative md:-mt-0 -mt-25"
       style={{
         backgroundImage: 'url("/images/landing/bg-cinema.webp")',
         backgroundSize: "cover",
