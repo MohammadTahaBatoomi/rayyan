@@ -17,7 +17,7 @@ function PastShows() {
   return (
     <section>
     <div
-      className="w-full h-auto md:h-[50vh] mx-auto p-4 relative md:-mt-10 mt-25"
+      className="w-full h-auto md:h-[50vh] mx-auto p-4 relative md:-mt-10 -mt-25"
       style={{
         backgroundImage: 'url("/images/landing/bg-cinema.webp")',
         backgroundSize: "cover",
@@ -63,7 +63,7 @@ function PastShows() {
                     <div className="flex flex-col md:flex-row-reverse bg-white/7 backdrop-blur-2xl rounded-xl shadow-lg overflow-hidden border border-[#2A2A2A] h-auto md:h-full">
                       {/* متن در سمت چپ */}
                       <div className="w-full md:w-2/3 pb-4 pt-0 md:py-4 px-6 flex flex-col justify-between">
-                      <div className="w-full md:hidden block md:w-1/3 p-4 flex justify-center">
+                      <div className="w-full md:hidden md:w-1/3 p-4 flex justify-center">
                         <img
                           src={item.heroSectionData.posterImage}
                           alt={item.heroSectionData.title}
