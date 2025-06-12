@@ -8,23 +8,19 @@ export default function Home() {
   return (
     <div className="relative h-screen overflow-hidden">
       {/* بک‌گراند دسکتاپ */}
-      <img
-        src="/images/landing/poster616.webp"
-        alt="Full screen background desktop"
-        className="absolute inset-0 w-full h-full object-cover hidden lg:block"
+      <div
+        className="absolute inset-0 w-full h-full hidden lg:block bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: "url('/images/landing/poster616.webp')" }}
       />
 
       {/* بک‌گراند موبایل/تبلت */}
-      <img
-        src="/images/landing/poster69.webp"
-        alt="Full screen background mobile"
-        className="absolute inset-0 w-full h-[90vh] object-cover block lg:hidden"
+      <div
+        className="absolute inset-0 w-full h-[90vh] block lg:hidden bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: "url('/images/landing/poster69.webp')" }}
       />
 
       {/* لایه بور + تیرگی */}
-     <div className="absolute bottom-0 left-0 right-0 h-[90vh] bg-gradient-to-t from-black/70 via-black/70 to-black/0" />
-
-
+      <div className="absolute bottom-0 left-0 right-0 h-[90vh] bg-gradient-to-t from-black/70 via-black/70 to-black/0" />
 
       {/* دکمه‌ها در پایین سمت چپ */}
       <div className="absolute bottom-45 md:bottom-15 right-5 md:right-70 z-10 flex flex-col items-start gap-3">
