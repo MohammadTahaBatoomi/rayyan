@@ -17,7 +17,7 @@ function PastShows() {
   return (
     <section>
     <div
-      className="w-full h-auto md:h-[50vh] mx-auto p-4 relative -mt-10"
+      className="w-full h-auto md:h-[50vh] mx-auto p-4 relative md:-mt-10 -mt-25"
       style={{
         backgroundImage: 'url("/images/landing/bg-cinema.webp")',
         backgroundSize: "cover",
@@ -72,8 +72,7 @@ function PastShows() {
                       </div>
                         <div>
                           <h3 className="text-md md:text-xl font-bold mb-4 md:mb-16 text-right">
-                            {item.heroSectionData.title} -{" "}
-                            
+                            {item.heroSectionData.title} -{" "}  
                             {item.heroSectionData.year}
                           </h3>
                           <p className="text-gray-300 text-sm md:text-md font-bold leading-relaxed text-right mb-4">
