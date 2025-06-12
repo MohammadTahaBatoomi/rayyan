@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from 'react'
-import Landinglogin from "../alert/personalInfo";
+import Landinglogin from "../alert/";
 
 
 function Ticket() {

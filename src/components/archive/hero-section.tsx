@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link"; // اگر از Next.js استفاده می‌کنی
-import Landinglogin from "../alert/personalInfo";
+import Landinglogin from "../alert/ticket";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaCalendarAlt } from "react-icons/fa";
 
